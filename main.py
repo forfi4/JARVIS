@@ -1,3 +1,5 @@
+from setup_wizard import run_if_needed
+run_if_needed()
 import os
 os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
 import pyautogui
@@ -51,6 +53,8 @@ from skills import *
 from audio_engine import *
 from ai_core import *
 from gui import *
+
+
 
 
 
@@ -426,7 +430,7 @@ def jarvis_brain():
             pywhatkit.search(target)
 
         elif intent == "get_weather_global":
-            city = target if target else "Shtula"
+            city = target if target else "london"
             is_hebrew = any('\u0590' <= c <= '\u05ea' for c in command)
             temp = get_global_weather(city)
             if temp == "ERROR":

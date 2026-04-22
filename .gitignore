@@ -1,13 +1,17 @@
-# === SECRETS — NEVER COMMIT ===
+# ── SECRETS — NEVER COMMIT ────────────────────────────────────────────────────
 .env
 
-# === PERSONAL DATA — NEVER COMMIT ===
+# ── PERSONAL DATA — NEVER COMMIT ─────────────────────────────────────────────
 jarvis_memory.json
 jarvis_reminders.json
 jarvis_chat_log.json
 todo_list.txt
+credentials.json
+token.json
+whatsapp_session/
+integration_guide.txt
 
-# === RUNTIME / TEMP FILES ===
+# ── RUNTIME / TEMP FILES ──────────────────────────────────────────────────────
 *.mp3
 *.wav
 temp_audio_*.wav
@@ -16,7 +20,7 @@ temp_song.wav
 temp_screenshot.png
 exhausted_models_cache.json
 
-# === PYTHON ===
+# ── PYTHON ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
 *.pyo
@@ -26,22 +30,19 @@ dist/
 build/
 .eggs/
 
-# === VIRTUAL ENVIRONMENTS ===
+# ── VIRTUAL ENVIRONMENTS ──────────────────────────────────────────────────────
 venv/
 .venv/
 env/
 .conda/
 
-# === IDE FILES ===
+# ── IDE FILES ─────────────────────────────────────────────────────────────────
 .vscode/
 .idea/
 *.suo
 *.user
 
-# === OS FILES ===
+# ── OS FILES ─────────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# === OPTIONAL: Remove this if you want it public ===
-UPGRADE_GUIDE.txt

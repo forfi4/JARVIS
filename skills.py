@@ -242,9 +242,9 @@ def morning_briefing():
     greeting = "Good morning, sir." if 5 <= now.hour < 12 else "Good afternoon, sir."
     time_str = now.strftime("%I:%M %p")
     try:
-        response = requests.get("https://wttr.in/Shtula?format=%t", timeout=5)
+        response = requests.get("https://wttr.in/London?format=%t", timeout=5)
         temp = response.text.strip().replace('+', '').replace('°C', '')
-        weather_str = f"The current temperature in Shtula is {temp} degrees Celsius."
+        weather_str = f"The current temperature in London is {temp} degrees Celsius."
     except:
         weather_str = "I am currently unable to fetch the weather data."
     briefing = f"{greeting} The time is {time_str}. {weather_str} Opening the daily news for you."
