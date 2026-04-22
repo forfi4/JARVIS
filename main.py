@@ -53,19 +53,13 @@ from skills import *
 from audio_engine import *
 from ai_core import *
 from gui import *
+from config import *
 
 
 
 
 
-# ============================================================
-# ORIGINAL: Contacts
-# ============================================================
-CONTACTS = {
-    "אמא": "+972535705052",
-    "אבא": "+972529270383",
-    "רום": "+972581234567"
-}
+
 
 # ============================================================
 # NEW FEATURE 1: Global Hotkey — Press Ctrl+J anywhere to wake Jarvis
